@@ -2,14 +2,11 @@ import React, { useEffect } from 'react'
 import { useState } from 'react'
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import { purple, red } from '@mui/material/colors';
-// import BrowseJobs from './BrowseJobs';
-import axios from 'axios'
+import { purple } from '@mui/material/colors';
 import Filter from './Filter';
 import JobList from './JobList';
 import { Country, City } from 'country-state-city';
-// import {countries} from 'country-data';
-import { countryToAlpha2, countryToAlpha3 } from "country-to-iso";
+import { countryToAlpha2} from "country-to-iso";
 import getJobs from './getJobs';
 import searchJobs from './searchJobs';
 import { RotatingLines } from 'react-loader-spinner'

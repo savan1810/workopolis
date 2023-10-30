@@ -1,9 +1,4 @@
 import React from 'react'
-import InputLabel from '@mui/material/InputLabel';
-import FormHelperText from '@mui/material/FormHelperText';
-import FormControl from '@mui/material/FormControl';
-import Select from '@mui/material/Select';
-import { purple, red } from '@mui/material/colors';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import '../style/style.css';
@@ -17,7 +12,6 @@ const Filter = () => {
     const [postedTime, setPostedTime] = React.useState("Any time");
     const [pay, setPay] = React.useState(50000);
     const [type, setType] = React.useState("full time");
-    const [location, setLocation] = React.useState("remote");
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
 
@@ -37,9 +31,7 @@ const Filter = () => {
     const handleTypeChange = (event) => {
         setType(event.target.value);
     };
-    const handleLocationChange = (event) => {
-        setLocation(event.target.value);
-    };
+  
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);

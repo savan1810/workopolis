@@ -1,15 +1,14 @@
 import './App.css';
 import MainPage from './components/MainPage'
 import {
-  BrowserRouter as Router,
+  
   Routes,
   Route,
-  Link
+  
 } from "react-router-dom";
-import BrowseJobs from './components/BrowseJobs';
+
 import FindJobs from './components/FindJobs';
-import Navbar from './components/Navbar';
-import JobSearch from './components/JobSearch';
+
 import Footer from './components/Footer';
 
 

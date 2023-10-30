@@ -6,9 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import Navbar from './components/Navbar'
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
 } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
